@@ -26,7 +26,13 @@ dataLogDir=/var/lib/zookeeper/log
   'ZOOKEEPER_FORCE_SYNC': 'forceSync',
   'ZOOKEEPER_JUTE_MAX_BUFFER': 'jute.maxbuffer',
   'ZOOKEEPER_SKIP_ACL': 'skipACL',
-  'ZOOKEEPER_QUORUM_LISTEN_ON_ALL_IPS': 'quorumListenOnAllIPs'
+  'ZOOKEEPER_QUORUM_LISTEN_ON_ALL_IPS': 'quorumListenOnAllIPs',
+  'ZOOKEEPER_QUORUM_AUTH_ENABLE_SASL': 'quorum.auth.enableSasl',
+  'ZOOKEEPER_QUORUM_AUTH_LEARNER_REQUIRE_SASL': 'quorum.auth.learnerRequireSasl',
+  'ZOOKEEPER_QUORUM_AUTH_SERVER_REQUIRE_SASL': 'quorum.auth.serverRequireSasl',
+  'ZOOKEEPER_QUORUM_AUTH_LEARNER_LOGIN_CONTEXT': 'quorum.auth.learner.loginContext',
+  'ZOOKEEPER_QUORUM_AUTH_SERVER_LOGIN_CONTEXT': 'quorum.auth.server.loginContext',
+  'ZOOKEEPER_QUORUM_AUTH_KERBEROS_SERVICE_PRINCIPAL': 'quorum.auth.kerberos.servicePrincipal'
  } -%}
 
 {% for k, property in other_props.iteritems() -%}
